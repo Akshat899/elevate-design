@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Design Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="res/logo-nobg.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <h1 class="company-name"> </h1>
+        </div>      
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Feedbacks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slider">
+                <div class="slide active" style="background-image: url(res/hero-img-1.jpg); background-size: cover;">
+                    <div class="content">
+                        <h2>Welcome to Elevate</h2>
+                        <p>Discover the art of interior design.</p>
+                        <a href="about.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(res/hero-img-2.jpg); background-size: cover;">
+                    <div class="content">
+                        <h2>Portfolio</h2>
+                        <p>Explore our creative projects.</p>
+                        <a href="portfolio.html" class="btn">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(res/hero-img-3.jpg); background-size: cover;">
+                    <div class="content">
+                        <h2>Our Services</h2>
+                        <p>Transforming spaces with style.</p>
+                        <a href="services.html" class="btn">See Services</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(res/hero-img-4.jpg); background-size: cover;">
+                    <div class="content">
+                        <h2>Contact Us</h2>
+                        <p>Let's discuss your next project.</p>
+                        <a href="contact.html" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(res/hero-img-5.jpg); background-size: cover;">
+                    <div class="content">
+                        <h2>Testimonials</h2>
+                        <p>What our clients say about us.</p>
+                        <a href="testimonials.html" class="btn">Read Testimonials</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </section>
+    
+        <script>
+            let slideIndex = 0;
+    
+            function showSlides() {
+                const slides = document.querySelectorAll('.slide');
+                slides.forEach((slide, index) => {
+                    slide.style.display = index === slideIndex ? 'flex' : 'none';
+                });
+            }
+    
+            function changeSlide(n) {
+                const slides = document.querySelectorAll('.slide');
+                slideIndex = (slideIndex + n + slides.length) % slides.length;
+                showSlides();
+            }
+    
+            // Automatically change slides every 5 seconds
+            setInterval(() => changeSlide(1), 5000);
+            showSlides(); // Initial call to display the first slide
+        </script>
+        <section class="about">
+            <div class="about-content">
+                <h2>About Elevate</h2>
+                <p>At Elevate, we believe that every space has the potential to inspire and transform. Our team of expert designers collaborates with clients to create stunning interiors that reflect their unique style and needs. With a passion for aesthetics and functionality, we bring your vision to life.</p>
+                <a href="https://wa.me/+917728803757" class="whatsapp-btn" target="_blank">Chat with Us on WhatsApp</a>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <div class="logo"></div>
+                <p class="company-name"> </p>
+            </div>          
+            <div class="social-links">
+                <a href="https://www.instagram.com/designs.elevate" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"alt="instagram"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/oyJnMaG4UKy2hYMy7" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-google" style="color: #ffffff;"alt="google"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Elevate Design Studio. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

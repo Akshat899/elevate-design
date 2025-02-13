@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elevate Design Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="res/logo-nobg.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo"></div>
+            <h1 class="company-name"> </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Feedbacks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="hero-contact">
+        <h1><mark style="background-color: #ffffff;">Contact Us-</mark></h1>
+        <p class="tagline"><mark style="background-color: #ffffff;">Let's bring your vision to life</mark></p>
+    </section>
+
+    <section class="contact-form">
+        <h2>We’d love to hear from you!</h2>
+        <form action="https://formsubmit.co/elevate161024@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="clientName">Client's Name:</label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="clientAge">Client's Age:</label>
+                <input type="number" id="clientAge" name="clientAge" required>
+            </div>
+
+            <div class="form-group">
+                <label for="clientProfession">Client's Profession:</label>
+                <input type="text" id="clientProfession" name="clientProfession" required>
+            </div>
+
+            <div class="form-group">
+                <label for="propertyType">Property Type:</label>
+                <select id="propertyType" name="propertyType" required>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                    <option value="bungalow">Bungalow</option>
+                    <option value="farmhouse">Farmhouse</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="propertyArea">Property Area (in sq.ft):</label>
+                <input type="number" id="propertyArea" name="propertyArea" required>
+            </div>
+
+            <div class="form-group">
+                <label>Property Extra Info:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="neighbors" value="yes"> Neighbors</label>
+                    <label><input type="checkbox" name="standalone" value="yes"> Standalone</label>
+                    <label><input type="checkbox" name="cityOutskirts" value="yes"> City Outskirts</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="familyHeadcount">Family Members Headcount:</label>
+                <select id="familyHeadcount" name="familyHeadcount" required>
+                    <option value="1-2">1-2</option>
+                    <option value="3-4">3-4</option>
+                    <option value="5-6">5-6</option>
+                    <option value="7+">7+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Are you married?</label>
+                <label><input type="radio" name="married" value="yes" required> Yes</label>
+                <label><input type="radio" name="married" value="no" required> No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="spouseName">Spouse Name (if married):</label>
+                <input type="text" id="spouseName" name="spouseName">
+            </div>
+
+            <div class="form-group">
+                <label for="spouseProfession">Spouse Profession (if married):</label>
+                <input type="text" id="spouseProfession" name="spouseProfession">
+            </div>
+
+            <div class="form-group">
+                <label>Do you have kids?</label>
+                <label><input type="radio" name="kids" value="yes" required> Yes</label>
+                <label><input type="radio" name="kids" value="no" required> No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="kidsCount">Kids Count (if applicable):</label>
+                <input type="number" id="kidsCount" name="kidsCount">
+            </div>
+
+            <div class="form-group">
+                <label for="kidsAge">Kids Age (if applicable):</label>
+                <input type="text" id="kidsAge" name="kidsAge" placeholder="e.g., 5, 10, 12">
+            </div>
+
+            <div class="form-group">
+                <label for="kidsExpectation">Kids' Expectations from Design (if applicable):</label>
+                <textarea id="kidsExpectation" name="kidsExpectation"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="parentsInfo">Parents Information (if living together):</label>
+                <textarea id="parentsInfo" name="parentsInfo"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Do you have an electric vehicle?</label>
+                <label><input type="radio" name="electricVehicle" value="yes"> Yes</label>
+                <label><input type="radio" name="electricVehicle" value="no"> No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="twoWheelerCount">Two-wheeler Count:</label>
+                <input type="number" id="twoWheelerCount" name="twoWheelerCount">
+            </div>
+
+            <div class="form-group">
+                <label for="fourWheelerCount">Four-wheeler Count:</label>
+                <input type="number" id="fourWheelerCount" name="fourWheelerCount">
+            </div>
+
+            <div class="form-group">
+                <label for="fourWheelerParking">Four-wheeler Parking:</label>
+                <select id="fourWheelerParking" name="fourWheelerParking">
+                    <option value="inside">Inside</option>
+                    <option value="outside">Outside</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Do you have pets?</label>
+                <label><input type="radio" name="pets" value="yes"> Yes</label>
+                <label><input type="radio" name="pets" value="no"> No</label>
+            </div>
+
+            <div class="form-group">
+                <label>Do you need a bar or a hidden bar?</label>
+                <label><input type="radio" name="bar" value="bar"> Bar</label>
+                <label><input type="radio" name="bar" value="hiddenBar"> Hidden Bar</label>
+                <label><input type="radio" name="bar" value="none"> None</label>
+            </div>
+
+            <div class="form-group">
+                <label>Do you need a smoking zone?</label>
+                <label><input type="radio" name="smokingZone" value="yes"> Yes</label>
+                <label><input type="radio" name="smokingZone" value="no"> No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="constructionStage">Current Stage of Construction:</label>
+                <input type="text" id="constructionStage" name="constructionStage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceHow">How can we be of service to you?</label>
+                <textarea id="serviceHow" name="serviceHow" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="garageRequirement">Specific Garage Requirement:</label>
+                <textarea id="garageRequirement" name="garageRequirement"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terraceRequirement">Specific Terrace Requirement:</label>
+                <textarea id="terraceRequirement" name="terraceRequirement"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceTime">How soon do you need the service?</label>
+                <input type="text" id="serviceTime" name="serviceTime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="finishTime">How soon do you want the property finished?</label>
+                <input type="text" id="finishTime" name="finishTime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="contact-info">
+        <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h4>Office Address</h4>
+                    <p>H-22,S-9,Saraswati Colony,Police Line<br>Near Old Akashwani Road<br>Kota,Rajasthan,324001</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Follow Us on Instagram</h4>
+                    <a href="https://www.instagram.com/designs.elevate" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram" style="color: black;"alt="instagram"></i>
+                        @designs.elevate
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <h4>Find Us on Google</h4>
+                    <a href="https://maps.app.goo.gl/oyJnMaG4UKy2hYMy7" target="_blank" class="social-link">
+                        <i class="fa-brands fa-google" style="color: black;"alt="google"></i>
+                        View on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-container">
+                <div class="logo"></div>
+                <p class="company-name"> </p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/designs.elevate" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"alt="instagram"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/oyJnMaG4UKy2hYMy7" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-google" style="color: #ffffff;"alt="google"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Elevate Design Studio. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
